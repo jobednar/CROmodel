@@ -1,0 +1,23 @@
+Package: CROmodel
+Title: MCIAM for the assessment of CROs
+Version: 0.0.1
+Authors@R: 
+    person(given = "Johannes",
+           family = "Bednar",
+           role = c("aut", "cre"),
+           email = "bednar@iiasa.ac.at")
+Maintainer: Johannes Bednar <bednar@iiasa.ac.at>
+Description: R code to execute the medium complexity Integrated Assessment Model (MCIAM) for the assessment of Carbon Removal Obligations (CROs). 
+    This R package is used to run the optimization model coded in 'GAMS' (v26.1.0, see <www.gams.com>) and using the CONOPT solver, and to read and illustrate model inputs and results. 
+    GAMS and the R package 'gdxrrw' need to be installed for being able to use the CROmodel package. 
+    The data used in this package were retrieved from the 'SSP scenario database' hosted by IIASA and underly the terms of use available at: <https://tntcat.iiasa.ac.at/SspDb/dsd?Action=htmlpage&page=about#termsofuse>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    dplyr,
+    reshape2,
+    ggplot2,
+    RColorBrewer
